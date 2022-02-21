@@ -1,4 +1,3 @@
-
 function obterMedia() {
     let a = parseInt(document.getElementById("a").value);
     let b = parseInt(document.getElementById("b").value);
