@@ -5,7 +5,7 @@ function somar(){
     let n2Soma = Number(tn2Soma);
     r = n1Soma + n2Soma;
     let rText = document.querySelector('h2.resultSoma');
-    rText.innerHTML = (`A soma dos números ${n1Soma} e ${n2Soma} é igual a: ${r}!`);
+    rText.innerHTML = (`A soma dos números ${n1Soma} e ${n2Soma} é igual a: <span style="font-weight:700;">${r}</span>!`);
 }
 function sub() {
     let tn1Sub = document.querySelector('input#tn1Sub').value;
@@ -14,5 +14,5 @@ function sub() {
     let n2Sub = Number(tn2Sub);
     let r = n1Sub - n2Sub;
     let rText = document.querySelector('h2.resultSub');
-    rText.innerHTML = (`A subtração dos números ${n1Sub} e ${n2Sub} é igual a: ${r}!`)
+    rText.innerHTML = (`A subtração dos números ${n1Sub} e ${n2Sub} é igual a: <span style="font-weight:700;">${r}</span>!`)
 }
