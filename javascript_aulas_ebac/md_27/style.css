@@ -1,0 +1,34 @@
+body {
+    background: rgb(238, 238, 238);
+}
+.main_div {
+}
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 350px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.648);
+}
+.main_title {
+    margin: 10px 0;
+}
+.main_form {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px 0;
+}
+.main_text {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+.main_text span {
+    font-weight: bold;
+}
