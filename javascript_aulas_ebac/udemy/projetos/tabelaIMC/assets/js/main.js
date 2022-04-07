@@ -7,8 +7,8 @@ function meuEscopo() {
         let altura = document.querySelector('input.input-altura');
         peso = peso.value;
         altura = altura.value;
-        let resultado = Number(peso / (altura * 2));
-        if(resultado <= 18,5) {
+        let resultado = peso / (altura * 2);
+        if(resultado => 10 && resultado <= 18,5) {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4>Seu IMC é <span>${resultado}</span> e seu status é: <span>Abaixo do peso!</span></h4></div>`
         } else if(resultado > 18,5 && resultado <= 24,9) {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4>Seu IMC é <span>${resultado}</span> e seu status é: <span>Peso normal!</span></h4></div>`
@@ -20,7 +20,7 @@ function meuEscopo() {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4>Seu IMC é <span>${resultado}</span> e seu status é: <span>Obesidade grau 2</span></h4></div>`
         } else if(resultado > 39,9) {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4>Seu IMC é <span>${resultado}</span> e seu status é: <span>Obesidade grau 3</span></h4></div>`
-        } else if(peso == NaN || altura == NaN) {
+        } else if(resultado === !Number) {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4><span class="error">Valor Inválido</span></h4></div>`
         } else {
             respostaBlock.innerHTML += `<div class="respostaBlock"><h4><span class="error">Valor Inválido</span></h4></div>`
