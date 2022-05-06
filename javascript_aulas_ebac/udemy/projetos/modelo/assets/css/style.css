@@ -12,7 +12,7 @@ body {
     line-height: 1.5rem;
 }
 .container {
-    max-width: 90%;
+    max-width: 640px;
     margin: 50px auto;
     background: white;
     border-radius: 15px;
@@ -23,14 +23,31 @@ body {
     font-weight: 100;
     letter-spacing: 0.5px;
 }
-table {
+form input, form label{
+    display: block;
     width: 100%;
 }
-th {
-    background-color: gray;
-    border: 1px solid black;
-    text-align: center;
+form input {
+    margin-bottom: 17px;
+    font-size: 20px;
+    height: 40px;
 }
-td {
-    border: 1px solid black;
+form input:focus {
+    outline: 1px solid rgb(13, 106, 134);
+}
+form button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(11, 94, 120);
+    border: none;
+    color: rgb(220, 220, 220);
+    transition: all 0.5s ease-in-out;
+}
+form button:hover {
+    background: rgb(13, 106, 134);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(11, 94, 120);
 }
