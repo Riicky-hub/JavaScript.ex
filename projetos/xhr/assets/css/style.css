@@ -19,10 +19,6 @@ body {
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.603);
     padding: 20px;
 }
-.container p {
-    font-weight: 100;
-    letter-spacing: 0.5px;
-}
 table {
     width: 100%;
 }
@@ -33,4 +29,11 @@ th {
 }
 td {
     border: 1px solid black;
+}
+tr {
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+tr:hover {
+    background-color: rgb(205, 205, 205);
 }
