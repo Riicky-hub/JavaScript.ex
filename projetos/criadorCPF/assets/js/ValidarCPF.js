@@ -16,7 +16,7 @@ export default class ValidaCPF {
         if(newCpf !== this.cpfLimpo) return true;
         return false;
     }
-    criaDig(cpf) {
+    static criaDig(cpf) {
         const cpfArray = Array.from(cpf);
         let total = 0;
         let reverse = cpf.length + 1;
