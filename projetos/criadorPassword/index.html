@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gerador de senha</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./src/assets/css/style.css">
 </head>
 
 <body>
@@ -14,16 +14,15 @@
   <section class="container">
     <h1>Gerador de senha</h1>
     <div class="response">
-      <h3>Senha Aqui</h3>
     </div>
     <div class="inputs">
       <div>
         <label for="input__quantidade">Quantidades de caracteres</label>
-        <input type="number" id="input__quantidade">
+        <input type="number" id="input__quantidade" min="1" max="35">
       </div>
       <div>
         <label for="input__num">Adicionar números</label>
-        <input type="checkbox" id="input__num" class="inputs">
+        <input type="checkbox" id="input__num" class="inputs" checked>
       </div>
       <div>
         <label for="input__maius">Adicionar maiúscula</label>
@@ -37,10 +36,10 @@
         <label for="input__symbol">Adicionar símbolos</label>
         <input type="checkbox" id="input__symbol" class="inputs">
       </div>
-      <button type="button">Gerar</button>
+      <button type="button" class="btn">Gerar</button>
     </div>
   </section>
-  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>

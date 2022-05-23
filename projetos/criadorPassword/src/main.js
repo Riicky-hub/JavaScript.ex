@@ -1,0 +1,1 @@
+import * as password from "./modules/CriaSenha.js";
