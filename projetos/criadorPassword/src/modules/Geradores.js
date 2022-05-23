@@ -15,7 +15,7 @@ export default function criarSenha(limit, maius, minus, number, symbol) {
         number && campo.push(geraNumber());
         symbol && campo.push(geraSymbol());
     }
-    if(limit > 35) limit = 35;
+    if(limit > 35) limit = 30;
     if(maius === false && minus === false && number === false && symbol === false) {
         let error = `Por favor, selecione uma opção`;
         return error;
