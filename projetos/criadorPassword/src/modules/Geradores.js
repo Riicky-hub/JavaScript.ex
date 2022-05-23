@@ -17,7 +17,7 @@ export default function criarSenha(limit, maius, minus, number, symbol) {
     }
     if(limit > 35) limit = 35;
     if(maius === false && minus === false && number === false && symbol === false) {
-        let error = `Por favor selecione uma opção`;
+        let error = `Por favor, selecione uma opção`;
         return error;
     }
     return campo.join('').slice(0, limit);
