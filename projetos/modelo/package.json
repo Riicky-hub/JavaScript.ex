@@ -1,10 +1,9 @@
 {
-  "name": "aula15",
-  "version": "1.0.0",
-  "description": "",
+  "name": "modelo",
+  "version": "2.0.0",
+  "description": "modelo base para testes de back-end",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon server.js --ignore public --ignore frontend",
     "dev": "webpack -w"
   },
