@@ -1,19 +1,21 @@
 {
   "name": "modelo",
-  "version": "2.0.0",
-  "description": "modelo base para testes de back-end",
+  "version": "2.0.1",
+  "description": "Modelo usado para estudos e testes",
   "main": "server.js",
   "scripts": {
     "start": "npx nodemon server.js --ignore public --ignore frontend",
     "dev": "webpack -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Riicky-hub",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.22.6",
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "core-js": "^3.22.6",
+    "mongoose": "^6.3.4",
     "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
