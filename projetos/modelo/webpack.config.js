@@ -1,7 +1,7 @@
-const path = require('path');
+const path = require('path'); // CommonJS
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './frontend/main.js',
   output: {
     path: path.resolve(__dirname, 'public', 'assets', 'js'),
@@ -18,10 +18,9 @@ module.exports = {
         }
       }
     }, {
-      exclude: /node_modules/,
       test: /\.css$/,
       use: ['style-loader', 'css-loader']
     }]
   },
   devtool: 'source-map'
-}
+};

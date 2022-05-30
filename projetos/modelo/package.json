@@ -1,32 +1,37 @@
 {
   "name": "modelo",
-  "version": "2.0.1",
-  "description": "Modelo usado para estudos e testes",
+  "version": "2.2.0",
+  "description": "modelo para projetos e testes",
   "main": "server.js",
   "scripts": {
-    "start": "npx nodemon server.js --ignore public --ignore frontend",
+    "start": "nodemon server.js --ignore public --ignore frontend",
     "dev": "webpack -w"
   },
   "keywords": [],
-  "author": "Riicky-hub",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.22.6",
-    "dotenv": "^16.0.1",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "mongoose": "^6.3.4",
-    "regenerator-runtime": "^0.13.9"
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.0",
+    "core-js": "^3.9.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.12.1",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.3",
     "nodemon": "^2.0.16",
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.0",
-    "@babel/preset-env": "^7.18.0",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "style-loader": "^2.0.0",
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.5.0"
   }
 }
